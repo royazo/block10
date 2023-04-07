@@ -1,0 +1,114 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* Desktop rules */
+@media only screen and (max-width: 1680px) {
+    body {
+      background-color: white;
+    }
+  }
+/* Mobile Rules */
+  @media only screen and (max-width: 480px) {
+    body {
+      background-color: white;
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 50vh;
+    border: 2px solid red;
+    position: relative;
+    display: flex;
+  }
+
+  .rectangle {
+    background-color: rgb(143, 143, 143);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+  }
+
+  .cicle1 {
+    background-color: rgb(17, 237, 237);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+  }
+
+  .circle2 {
+    background-color: rgb(28, 17, 237);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+
+    top: 40px;
+    left: 15px;
+    display: flex;
+  }
+
+    .circle3 {
+        background-color: rgb(237, 226, 17);
+        width: 13vh;
+        height: 13vh;
+        border-radius: 50%;
+        z-index: 4;
+        position: absolute;
+    
+        top: 50px;
+        left: 30px;
+        display: flex;
+
+    }
+
+    .oval {
+        background-color: rgb(237, 101, 17);
+        width: 40vh;
+        height: 15vh;
+        border-radius: 50%;
+        z-index: 5;
+        position: absolute;
+    
+        bottom: 50px;
+        right: 30px;
+        /* display: flex; */
+    }
+
+  .Form {
+    width: 30%;
+    margin: auto;
+  }
+  
+
+  input {
+    padding: 10px;
+    margin: 10px 0;
+  }
